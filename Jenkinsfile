@@ -1,5 +1,6 @@
 pipeline {
 agent { label 'master' }
+stages {
 stage('Deploy staging') {
 echo 'Hello World'
 }
@@ -8,6 +9,7 @@ input "Continue?"
 }
 stage('Deploy to production') {
 echo 'Deploy to production'
+}
 }
 }
 post {
