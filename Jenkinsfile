@@ -1,4 +1,5 @@
-node {
+pipeline {
+agent { label 'master' }
 stage('Deploy staging') {
 echo 'Hello World'
 }
